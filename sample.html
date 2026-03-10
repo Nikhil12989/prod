@@ -8,55 +8,116 @@
 <title>Sample HTML Page</title>
 
 <style>
+
 body {
     font-family: Arial, sans-serif;
-    margin: 40px;
+    margin: 0;
     background-color: #f4f4f4;
 }
 
-h1 {
-    color: #2c3e50;
+/* Navbar */
+.navbar{
+    background:#2c3e50;
+    padding:15px;
+    color:white;
 }
 
-h2 {
-    color: #34495e;
+.navbar a{
+    color:white;
+    margin-right:20px;
+    text-decoration:none;
+    font-weight:bold;
 }
 
-.container {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
+.navbar a:hover{
+    text-decoration:underline;
 }
 
-ul {
-    line-height: 1.8;
+/* Main container */
+
+.container{
+    width:80%;
+    margin:auto;
+    margin-top:30px;
+    background:white;
+    padding:25px;
+    border-radius:10px;
 }
 
-table {
-    border-collapse: collapse;
-    width: 100%;
-    margin-top: 15px;
+/* Headings */
+
+h1{
+    color:#2c3e50;
 }
 
-table, th, td {
-    border: 1px solid #ccc;
+h2{
+    color:#34495e;
 }
 
-th, td {
-    padding: 10px;
-    text-align: left;
+/* List */
+
+ul{
+    line-height:1.8;
 }
 
-footer {
-    margin-top: 20px;
-    font-size: 14px;
-    color: gray;
+/* Table */
+
+table{
+    border-collapse:collapse;
+    width:100%;
+    margin-top:15px;
 }
+
+th{
+    background:#2c3e50;
+    color:white;
+}
+
+table,th,td{
+    border:1px solid #ccc;
+}
+
+th,td{
+    padding:10px;
+    text-align:left;
+}
+
+/* Button */
+
+button{
+    background:#2c3e50;
+    color:white;
+    padding:10px 20px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#1a252f;
+}
+
+/* Footer */
+
+footer{
+    text-align:center;
+    margin-top:30px;
+    padding:10px;
+    background:#ddd;
+}
+
 </style>
 
 </head>
 
 <body>
+
+<div class="navbar">
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Services</a>
+<a href="#">Contact</a>
+</div>
 
 <div class="container">
 
@@ -66,10 +127,15 @@ footer {
 This is a simple HTML file created to demonstrate headings, paragraphs, lists, tables, and links.
 </p>
 
+<img src="https://via.placeholder.com/600x200" alt="sample image" width="100%">
+
 <h2>About HTML</h2>
+
 <p>
-HTML stands for <b>HyperText Markup Language</b>. It is used to create webpages.
+HTML stands for <b>HyperText Markup Language</b>. It is used to create webpages and structure content on the internet.
 </p>
+
+<button>Learn More</button>
 
 <h2>Popular Web Technologies</h2>
 
@@ -84,6 +150,7 @@ HTML stands for <b>HyperText Markup Language</b>. It is used to create webpages.
 <h2>Sample Table</h2>
 
 <table>
+
 <tr>
 <th>Technology</th>
 <th>Purpose</th>
@@ -103,19 +170,25 @@ HTML stands for <b>HyperText Markup Language</b>. It is used to create webpages.
 <td>JavaScript</td>
 <td>Interactivity</td>
 </tr>
+
+<tr>
+<td>React</td>
+<td>Frontend framework</td>
+</tr>
+
 </table>
 
 <h2>Useful Link</h2>
 
 <p>
-Visit <a href="https://developer.mozilla.org">MDN Web Docs</a>
+Visit <a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a> to learn more about web development.
 </p>
+
+</div>
 
 <footer>
 © 2026 Sample HTML Page
 </footer>
-
-</div>
 
 </body>
 </html>
