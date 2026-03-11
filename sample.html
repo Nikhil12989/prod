@@ -1,194 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
 
-<title>Sample HTML Page</title>
-
-<style>
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #f4f4f4;
-}
-
-/* Navbar */
-.navbar{
-    background:#2c3e50;
-    padding:15px;
-    color:white;
-}
-
-.navbar a{
-    color:white;
-    margin-right:20px;
-    text-decoration:none;
-    font-weight:bold;
-}
-
-.navbar a:hover{
-    text-decoration:underline;
-}
-
-/* Main container */
-
-.container{
-    width:80%;
-    margin:auto;
-    margin-top:30px;
-    background:white;
-    padding:25px;
-    border-radius:10px;
-}
-
-/* Headings */
-
-h1{
-    color:#2c3e50;
-}
-
-h2{
-    color:#34495e;
-}
-
-/* List */
-
-ul{
-    line-height:1.8;
-}
-
-/* Table */
-
-table{
-    border-collapse:collapse;
-    width:100%;
-    margin-top:15px;
-}
-
-th{
-    background:#2c3e50;
-    color:white;
-}
-
-table,th,td{
-    border:1px solid #ccc;
-}
-
-th,td{
-    padding:10px;
-    text-align:left;
-}
-
-/* Button */
-
-button{
-    background:#2c3e50;
-    color:white;
-    padding:10px 20px;
-    border:none;
-    border-radius:5px;
-    cursor:pointer;
-}
-
-button:hover{
-    background:#1a252f;
-}
-
-/* Footer */
-
-footer{
-    text-align:center;
-    margin-top:30px;
-    padding:10px;
-    background:#ddd;
-}
-
-</style>
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="navbar">
-<a href="#">Home</a>
-<a href="#">About</a>
-<a href="#">Services</a>
-<a href="#">Contact</a>
-</div>
+    <div class="container">
 
-<div class="container">
+        <h1>My Todo List</h1>
 
-<h1>Welcome to Sample HTML Page</h1>
+        <div class="input-section">
+            <input type="text" id="taskInput" placeholder="Enter a task">
+            <button id="addTaskBtn">Add Task</button>
+        </div>
 
-<p>
-This is a simple HTML file created to demonstrate headings, paragraphs, lists, tables, and links.
-</p>
+        <ul id="taskList"></ul>
 
-<img src="https://via.placeholder.com/600x200" alt="sample image" width="100%">
+    </div>
 
-<h2>About HTML</h2>
-
-<p>
-HTML stands for <b>HyperText Markup Language</b>. It is used to create webpages and structure content on the internet.
-</p>
-
-<button>Learn More</button>
-
-<h2>Popular Web Technologies</h2>
-
-<ul>
-<li>HTML</li>
-<li>CSS</li>
-<li>JavaScript</li>
-<li>React</li>
-<li>Spring Boot</li>
-</ul>
-
-<h2>Sample Table</h2>
-
-<table>
-
-<tr>
-<th>Technology</th>
-<th>Purpose</th>
-</tr>
-
-<tr>
-<td>HTML</td>
-<td>Structure of webpage</td>
-</tr>
-
-<tr>
-<td>CSS</td>
-<td>Styling and layout</td>
-</tr>
-
-<tr>
-<td>JavaScript</td>
-<td>Interactivity</td>
-</tr>
-
-<tr>
-<td>React</td>
-<td>Frontend framework</td>
-</tr>
-
-</table>
-
-<h2>Useful Link</h2>
-
-<p>
-Visit <a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a> to learn more about web development.
-</p>
-
-</div>
-
-<footer>
-© 2026 Sample HTML Page
-</footer>
-
+<script src="script.js"></script>
 </body>
 </html>
